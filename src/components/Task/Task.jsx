@@ -1,7 +1,7 @@
 // import hook 
 import { useDispatch } from "react-redux";
 // Import the action generator
-import { deleteTask, toggleCompleted } from "redux/actions";
+import { deleteTask, toggleCompleted } from "redux/tasksSlice"; 
 
 import { MdClose } from "react-icons/md";
 import css from "./Task.module.css";
@@ -9,7 +9,6 @@ import css from "./Task.module.css";
 export const Task = ({ task }) => {
 // Get a link to the action dispatch function
 const dispatch = useDispatch();
-
 // Call the action generator and pass the task text for the payload field
 // Sending the result - task deleted action
 const handleDelete = () => dispatch(deleteTask(task.id));

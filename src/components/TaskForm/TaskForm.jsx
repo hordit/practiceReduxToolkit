@@ -1,7 +1,7 @@
 // import hook
 import { useDispatch } from 'react-redux';
 // Import the action generator
-import { addTask } from 'redux/actions';
+import { addTask } from 'redux/tasksSlice';
 
 import { Button } from 'components/Button/Button';
 import css from './TaskForm.module.css';

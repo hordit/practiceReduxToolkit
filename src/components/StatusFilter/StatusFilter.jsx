@@ -5,7 +5,7 @@ import { statusFilters } from 'redux/constants';
 // import selector
 import { getStatusFilter } from 'redux/selectors';
 import { Button } from 'components/Button/Button';
-import { setStatusFilter } from 'redux/actions';
+import { setStatusFilter } from 'redux/filtersSlice'; 
 import css from './StatusFilter.module.css';
 
 export const StatusFilter = () => {
